@@ -3,24 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MotionFrame AI</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>MotionFrame AI</h1>
+  <div class="container">
 
-  <p>Turn your images into cinematic motion.</p>
+    <div class="logo">
+      MotionFrame AI
+    </div>
 
-  <input type="file" id="imageInput" accept="image/*">
+    <div class="subtitle">
+      Turn your images into cinematic motion.
+    </div>
 
-  <br><br>
+    <div class="upload-box">
 
-  <img id="preview" style="max-width:90%; display:none;">
+      <h2>🖼️ Upload an Image</h2>
 
-  <br><br>
+      <p>Select a photo to animate</p>
 
-  <button>Generate Video</button>
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+      >
+
+      <img id="preview">
+
+    </div>
+
+    <div class="section">
+
+      <h3>🎥 Camera Movement</h3>
+
+      <select id="motion">
+
+        <option value="zoom-in">
+          Slow Zoom In
+        </option>
+
+        <option value="zoom-out">
+          Slow Zoom Out
+        </option>
+
+        <option value="pan-left">
+          Pan Left
+        </option>
+
+        <option value="pan-right">
+          Pan Right
+        </option>
+
+        <option value="dolly">
+          Cinematic Dolly
+        </option>
+
+      </select>
+
+    </div>
+
+    <div class="section">
+
+      <h3>⏱️ Duration</h3>
+
+      <select id="duration">
+
+        <option value="5">5 Seconds</option>
+        <option value="10">10 Seconds</option>
+
+      </select>
+
+    </div>
+
+    <button id="generateButton">
+      ✨ Generate Video
+    </button>
+
+  </div>
 
 </body>
-  </html>
+</html>
